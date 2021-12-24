@@ -24,11 +24,10 @@ public class EqualsTest {
 		String a2 = new String("홍길동");
 		
 		System.out.println(a1.hashCode());
-		System.out.println(a3.hashCode());
 		System.out.println(st1 == st3);
 		System.out.println(a1 == a2);	   // *** 이 문장 사용금지
 		System.out.println(a1.equals(a2)); // ******문자열의 내용 비교
-		
+		System.out.println(st1.equals(st3));
 		
 		
 	}

@@ -12,9 +12,17 @@ public class Student {
 		this.studentName = studentName;
 	}
 	
+	public Student(int studentID) {
+		this.studentID = studentID;
+	}
 	
-	// 이 문장 안꽂힌다...............................
-	@Override
+	public Student() {}
+	
+	
+		
+	/*
+	 @Override
+	 
 	public boolean equals(Object obj) {
 		Student std = (Student)obj; // Student 객체로 저장해야 하기 때문에 캐스팅 필요. ????????
 		if (std.studentID == this.studentID && std.studentName.equals(studentName)) {
@@ -23,5 +31,28 @@ public class Student {
 			return false;
 		}
 	}
-	//****정리****** 문자열비교는 equals를 써라.
+	*/
+	
+	
+	
+	// getter , setter
+	public int getStudentID() {
+		return this.studentID;
+	}
+	
+	public String getStudentName() {
+		return this.studentName;
+	}
+	
+	public void setStudentID(int studentID) {
+		this.studentID = studentID;
+	}
+	
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	
+	
+	
+	
 }
