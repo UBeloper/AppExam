@@ -43,10 +43,11 @@ public class StudentArrayList {
 	
 	
 	
+	
 	public void showAllMember() {
 		for ( Student student : arraylist) {
 //			System.out.println(student.getStudentID() + " : " + student.getStudentName());
-			System.out.println(arraylist);
+			System.out.println(student);
 		}
 	}
 	
