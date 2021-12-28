@@ -43,13 +43,16 @@ public class StudentArrayList {
 	
 	
 	
-	
 	public void showAllMember() {
-		for ( Student student : arraylist) {
-//			System.out.println(student.getStudentID() + " : " + student.getStudentName());
-			System.out.println(student);
+		for (Student stud : arraylist) {
+			System.out.println(stud.getStudentID() + " : " + stud.getStudentName());
 		}
 	}
 	
+		// 그냥 for문
+//		for(int i = 0; i < arraylist.size(); i++) {
+//			Student tmp = arraylist.get(i);
+//			System.out.println(tmp); // toString() 오버라이딩 시
+//		}
 
 }

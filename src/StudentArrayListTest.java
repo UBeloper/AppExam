@@ -9,6 +9,10 @@ public class StudentArrayListTest {
 		Student st4 = new Student(103, "±èÈ°¿ë");
 		Student st5 = new Student(104, "±è¸Å°³");
 		
+		// sal.addStudent(new Student(100, "È«±æµ¿"));
+		// sal.addStudent(new Student(200, "°­±æµ¿"));
+		// sal.addStudent(new Student(300, "±è±æµ¿"));
+		
 		sal.addStudent(st1);
 		sal.addStudent(st2);
 		sal.addStudent(st3);

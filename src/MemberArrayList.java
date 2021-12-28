@@ -26,9 +26,9 @@ public class MemberArrayList {
 		// 세개째만에 삭제하고자 하는게 있으면 나머지는 안봐도 돼. 그러면 반복처리 중단.
 		// "순차적으로 찾아나가는 느낌"
 		for(int i = 0; i < arrayList.size(); i++) {
-			Member member = arrayList.get(i);     //객체배열을 멤버에 담고 기존 멤버클래스에 필드값이 있으니까 거기서 id번호를 temp id에 담아놓으면 member객체 하나하나에 memberid가 입력됨.
-			int tempID = member.getMemberID();	  // 그이후 removemember(숫자값)에 넣고 if문을 돌리면 제거하는 방식 (있으면 제거한다.) 
-			if(tempID == memberID) {
+			Member tmp = arrayList.get(i);     //객체배열을 멤버에 담고 기존 멤버클래스에 필드값이 있으니까 거기서 id번호를 temp id에 담아놓으면 member객체 하나하나에 memberid가 입력됨.
+			int tempID = tmp.getMemberID();	  // 그이후 removemember(숫자값)에 넣고 if문을 돌리면 제거하는 방식 (있으면 제거한다.) 
+			if(tempID == memberID) {		// >> 더 쉽게 ★★★★ if(tmp.getMemberID == MemberID) {}
 				arrayList.remove(i); 	//객체 제거
 				
 				 // break대신 더 강력하게 탈출
